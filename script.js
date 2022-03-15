@@ -30,6 +30,7 @@ function calc() {
         alert("Unit of mass to big, please change to smaller unit!");
         return;
     }
+    document.getElementById("conEppi").value = conEppi;
     document.getElementById("mass").value = mass;
 
 }
