@@ -24,7 +24,7 @@ function calc() {
     const massUnit = Math.pow(10, document.getElementById("massUnit").value);
 
     const conEppi = (conInWell*conInWellUnit) * (volInWell*volInWellUnit) / (volAdd*volAddUnit);
-    alert("conEppi");
+    alert("conEppi").value;
     const mass = (conEppi * (volEppi*volEppiUnit) * molWeight / massUnit).toFixed(2);
     if (mass == "0.00") {
         document.getElementById("mass").value = "";
