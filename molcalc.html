@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molarity Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <label for="conInWell">Final concentration in Well</label>
+    <input type="number" name="conInWell" id="conWell" step="1" onchange="calc()">
+    <select name="conInWellUnit" id="conWellUnit" onchange="calc()">
+        <option value="-12">picoMolar</option>
+        <option value="-9">nanoMolar</option>
+        <option value="-6" selected="selected">microMolar</option>
+        <option value="-3">milliMolar</option>
+        <option value="0">Molar</option>
+    </select>
+    <br>
+    <label for="volumeInWell">Volume in Well</label>
+    <input type="number" name="volumeInWell" id="volWell" value="100" step="1" onchange="calc()">
+    <select name="volumeInWellUnit" id="volWellUnit" onchange="calc()">
+        <option value="-9">nanoLiter</option>
+        <option value="-6" selected="selected">microLiter</option>
+        <option value="-3">milliLiter</option>
+        <option value="0">Liter</option>
+    </select>
+    <br>
+    <label for="volumeAdd">Volume Add to Well</label>
+    <input type="number" name="volumeAdd" id="volAdd" value="1" step="1" onchange="calc()">
+    <select name="volumeAddUnit" id="volAddUnit" onchange="calc()">
+        <option value="-9">nanoLiter</option>
+        <option value="-6" selected="selected">microLiter</option>
+        <option value="-3">milliLiter</option>
+        <option value="0">Liter</option>
+    </select>
+    <br>
+    <label for="volumeInEppi">Volume in Eppi</label>
+    <input type="number" name="volumeInEppi" id="volEppi" step="1" onchange="calc()">
+    <select name="volumeInEppiUnit" id="volEppiUnit" onchange="calc()">
+        <option value="-9">nanoLiter</option>
+        <option value="-6" selected="selected">microLiter</option>
+        <option value="-3">milliLiter</option>
+        <option value="0">Liter</option>
+    </select>
+    <br>
+    <label for="molweight">Molecular Weight</label>
+    <input type="number" name="molweight" id="mol" step="0.01" onchange="calc()">
+    <label for="molweight">g/mol</label>
+    <br>
+    <label for="conInEppi">Conzentration in Eppi</label>
+    <input type="number" name="conInEppi" id="conEppi">
+    <select name="conInEppiUnit" id="conEppiUnit" onchange="calc()">
+            <option value="-12">picoMolar</option>
+            <option value="-9">nanoMolar</option>
+            <option value="-6">microMolar</option>
+            <option value="-3" selected="selected">milliMolar</option>
+            <option value="0">Molar</option>
+            <option value="3">kiloMolar</option>
+    </select>
+    <br>
+    <div class="bordered">
+        <label for="mass">Mass</label>
+        <input type="number" name="mass" id="mass">
+        <select name="massUnit" id="massUnit" onchange="calc()">
+            <option value="-12">picoGrams</option>
+            <option value="-9">nanoGrams</option>
+            <option value="-6">microGrams</option>
+            <option value="-3" selected="selected">milliGrams</option>
+            <option value="0">Grams</option>
+            <option value="3">kiloGrams</option>
+        </select>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
