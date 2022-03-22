@@ -24,7 +24,7 @@ function calc() {
     const conEppiUnit = Math.pow(10, document.getElementById("conEppiUnit").value);
     const massUnit = Math.pow(10, document.getElementById("massUnit").value);
 
-    const conEppi = ((conInWell*conInWellUnit) * (volInWell*volInWellUnit) / (volAdd*volAddUnit)/ conEppiUnit).toFixed(2);
+    const conEppi = ((conInWell*conInWellUnit) * (volInWell*volInWellUnit) / (volAdd*volAddUnit)) / conEppiUnit).toFixed(2);
     if (conEppi == "0.00") {
         document.getElementById("conEppi").value = "";
         alert("Unit of mass to big, please change to smaller unit!");
