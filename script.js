@@ -30,7 +30,7 @@ function calc() {
         alert("Unit of mass to big, please change to smaller unit!");
         return;
     }
-    const mass = (conEppi * (volEppi*volEppiUnit) * molWeight / massUnit).toFixed(2);
+    const mass = ((conEppi*conEppiUnit) * (volEppi*volEppiUnit) * molWeight / massUnit).toFixed(2);
     if (mass == "0.00") {
         document.getElementById("mass").value = "";
         alert("Unit of mass to big, please change to smaller unit!");
